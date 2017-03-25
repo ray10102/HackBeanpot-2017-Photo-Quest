@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{B3772BFB-EABF-E36C-2675-18861CC21BF8}") = "HackBeanpot-2017-Photo-Quest", "Assembly-CSharp.csproj", "{9EA2FDF5-435E-8DF8-0910-A411019FBC82}"
 EndProject
+Project("{B3772BFB-EABF-E36C-2675-18861CC21BF8}") = "HackBeanpot-2017-Photo-Quest", "Assembly-CSharp-Editor.csproj", "{40D64053-2DD8-FFE9-EAC7-AD59FEC94E4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{9EA2FDF5-435E-8DF8-0910-A411019FBC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EA2FDF5-435E-8DF8-0910-A411019FBC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EA2FDF5-435E-8DF8-0910-A411019FBC82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D64053-2DD8-FFE9-EAC7-AD59FEC94E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D64053-2DD8-FFE9-EAC7-AD59FEC94E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D64053-2DD8-FFE9-EAC7-AD59FEC94E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D64053-2DD8-FFE9-EAC7-AD59FEC94E4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
