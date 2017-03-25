@@ -1,7 +1,7 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackBeanpot-2017-Photo-Quest", "Assembly-CSharp.csproj", "{9EA2FDF5-435E-8DF8-0910-A411019FBC82}"
+# Visual Studio 2008
+
+Project("{B3772BFB-EABF-E36C-2675-18861CC21BF8}") = "HackBeanpot-2017-Photo-Quest", "Assembly-CSharp.csproj", "{9EA2FDF5-435E-8DF8-0910-A411019FBC82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
