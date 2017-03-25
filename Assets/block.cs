@@ -11,10 +11,9 @@ public class block : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        for (var touch : Touch in Input.touches) {
-            if (touch.phase == TouchPhase.Began) {
-                Debug.Log("touch");
-            }
+        foreach (Touch touch in Input.touches)
+        if (Input.GetTouch(0).phase == TouchPhase.Began) {
+            Debug.Log("touch");
         }
     }
 }
