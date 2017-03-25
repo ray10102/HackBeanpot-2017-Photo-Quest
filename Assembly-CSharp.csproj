@@ -59,17 +59,20 @@
      <Compile Include="Assets\Old Scripts\MusicManager.cs" />
      <Compile Include="Assets\Old Scripts\OptionsManager.cs" />
      <Compile Include="Assets\Old Scripts\Panel.cs" />
-     <Compile Include="Assets\Old Scripts\PlayerPrefsManager.cs" />
      <Compile Include="Assets\Old Scripts\Projectile.cs" />
      <Compile Include="Assets\Old Scripts\Shooter.cs" />
      <Compile Include="Assets\Old Scripts\Shredder.cs" />
      <Compile Include="Assets\Old Scripts\Spawner.cs" />
      <Compile Include="Assets\Old Scripts\StarDisplay.cs" />
      <Compile Include="Assets\Old Scripts\Stone.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\ItemSelect.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerPrefsManager.cs" />
+     <Compile Include="Assets\Scripts\TypewriterEffect.cs" />
+     <Compile Include="Assets\TextManager.cs" />
      <Compile Include="Assets\block.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
