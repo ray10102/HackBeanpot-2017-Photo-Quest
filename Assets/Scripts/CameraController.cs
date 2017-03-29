@@ -20,12 +20,12 @@ public class CameraController : MonoBehaviour {
         Vector3 pos = transform.position;
         Vector3 playerPos = player.gameObject.transform.position;
         if (left <= playerPos.x && playerPos.x <= right) {
-            pos.x = playerPos.x;
+            pos.x = playerPos.x + .5f;
         }
-        if (playerPos.y >= bottom && playerPos.y <= top + 2.85) {
-            pos.y = playerPos.y - 1.85f;
+        if (playerPos.y >= bottom + 2 && playerPos.y <= top - 2) {
+            pos.y = playerPos.y - 1f;
         }
-        pos.z = -10;
+        pos.z = -30;
         transform.position = pos;
     }
 }

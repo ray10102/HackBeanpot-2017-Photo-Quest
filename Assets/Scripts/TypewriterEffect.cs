@@ -5,7 +5,7 @@ using UnityEngine.UI;
 // attach to UI Text component (with the full text already there)
 
 public class TypewriterEffect : MonoBehaviour {
-	public Text txt;
+	private Text txt;
     public string line;
     public string[] stories;
 

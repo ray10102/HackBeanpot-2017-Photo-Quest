@@ -1,0 +1,23 @@
+Edit Log:
+M.DD.YY -- Name -- Commit Name
+
+3.28.17 -- Raymond Huang - Walls, Barriers, and Fire Spreading
+----------------------------------------------------------------------------------------------------
+Added IndestructableBarrier to represent walls. Wall limits are independent of object transform.
+Added fields to IndestructableBarrier and DestructableBarrier and updated Player to prevent illegal
+movement:
+
+- public float left, right, top, bottom : the intended bounds in world units
+- public float offsetLeft, offsetBottom : the actual bounds in world units 
+	CALCULATED IN SCRIPT to compensate for the player's pivot being in the bottom left
+	offsetLeft = left - 1 
+	offsetBottom = bottom - bottomOffset
+- public float bottomOffset : the amount to offset the bottom by (usually depends on art, see trees for example)
+
+Changed tree architecture: Individual trees with Trees scripts
+	are grouped under an empty object with TreeManager script.
+
+3.29.17 -- Raymond Huang - Minor updates
+----------------------------------------------------------------------------------------------------
+Updated IndestructableBarrier and DestructableBarrier's offset fields to be read only/use get.
+Updated TreeManager to calculate tree distance by tree centers rather than pivots.

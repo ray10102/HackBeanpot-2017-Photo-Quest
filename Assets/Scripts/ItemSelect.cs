@@ -5,10 +5,10 @@ using UnityEngine;
 public class ItemSelect : MonoBehaviour {
 
     private Camera myCamera;
-    private Player player;
+    private Inventory player;
 
     void Start() {
-        player = GameObject.FindObjectOfType<Player>();
+        player = GameObject.FindObjectOfType<Inventory>();
         myCamera = GameObject.FindObjectOfType<Camera>();
     }
 

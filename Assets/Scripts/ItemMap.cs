@@ -2,28 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemMap {
+public class ItemMap
+{
 
     Dictionary<string, InventoryItem> itemTable;
 
-    ItemMap()
+    public ItemMap()
     {
         this.itemTable = new Dictionary<string, InventoryItem>();
         this.initMap();
     }
 
     // Use this for initialization
-    void initMap () {
+    void initMap()
+    {
         //TODO dummy values to be replaced depending on output of indico api.
-        string[] cups = new string[] { "coffeepot", "coffee mug" };
-        string[] tables = new string[] { "table", "bench" };
-        string[] fire = new string[] { "lighter", "fire" };
-        string[] water = new string[] { "water", "rain" };
-        string[][] itemGroups = new string[][] { cups, tables, fire, water };
-        for(int i = 0; i < itemGroups.Length; i++)
+        string[] trashcan = new string[] { "bucket", "pail", "quilt", "comforter", "comfort", "puff", "bow tie", "bow-tie", "bowtie", "studio couch", "day bed", "ashcan", "trash can", "garbage can", "wastebin", "ash bin", "ash-bin", "ashbin", "dustbin", "trash barrel", "trash bin", "jean", "blue jean", "denim", "mortar", "bassinet" };
+        string[] tables = new string[] { "drum", "membranophone", "tympan", "banjo", "folding chair", "dough", "hatchet", "miniskirt", "mini", "cardigan", "wooden spoon", "dining table", "board" };
+        string[] fire = new string[] { "cinema", "movie theater", "movie theatre", "movie house", "picture palace", "coral fungus", "caldron", "cauldron" };
+        string[] water = new string[] { "coffee mug", "toilet tissue", "toilet paper", "bathroom tissue", "pick", "plectrum", "plectron", "measuring cup", "paper towel" };
+        string[][] itemGroups = new string[][] { trashcan, tables, fire, water };
+        for (int i = 0; i < itemGroups.Length; i++)
         {
             string[] items = itemGroups[i];
-            for(int j = 0; j < items.Length; j++)
+            for (int j = 0; j < items.Length; j++)
             {
                 string itemName = items[j];
                 switch (i)
@@ -49,20 +51,22 @@ public class ItemMap {
                         itemTable.Add(itemName, waterItem);
                         break;
                 }
-                }
+            }
+        }
+    }
+
+    public InventoryItem getItem(string[] itemKeys)
+    {
+        foreach (string item in itemKeys)
+        {
+            if (this.itemTable.ContainsKey(item))
+            {
+                return this.itemTable[item];
             }
         }
 
-    public InventoryItem getItem(string itemKey)
-    {
-        if (this.itemTable.ContainsKey(itemKey))
-        {
-            return this.itemTable[itemKey];
-        }
-        else
-        {
-            throw new ItemNotFoundException("Sorry that item is not in the game yet.");
-        }
+        throw new ItemNotFoundException("Sorry that item is not in the game yet.");
     }
-		
-	}
+}
+
+
